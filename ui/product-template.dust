@@ -1,0 +1,8 @@
+{#products}
+<tr>
+	<td>1</td>
+	<td>{productId}</td>
+	<td>{productName}</td>
+	<td>{productPrice}</td>
+</tr>
+{/products}
