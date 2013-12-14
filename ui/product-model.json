@@ -1,5 +1,5 @@
 {
-	"products" : 
+	"productList" : 
 	[
 		{"productId":"101", "productName":"맥북", "productPrice":"3,000,000"} ,
 		{"productId":"102", "productName":"아이패드", "productPrice":"1,500,000"} ,
