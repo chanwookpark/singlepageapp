@@ -1,0 +1,8 @@
+{
+	"products" : 
+	[
+		{"productId":"101", "productName":"맥북", "productPrice":"3,000,000"} ,
+		{"productId":"102", "productName":"아이패드", "productPrice":"1,500,000"} ,
+		{"productId":"103", "productName":"아이폰", "productPrice":"1,000,000"}
+	]
+}
