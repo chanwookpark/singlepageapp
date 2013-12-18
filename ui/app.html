@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<script src="http://code.jquery.com/jquery-2.0.3.js"></script>
+	<script src="https://raw.github.com/linkedin/dustjs/master/dist/dust-full.js"></script>
+</head>	
+<body>
+<script type='text/javascript'>
+
+$(document).ready(function(){
+
+	// Test Data
+	var modelUrl = "https://raw.github.com/chanwookpark/singlepageapp/master/ui/product-model.json";
+	var templateUrl = "https://raw.github.com/chanwookpark/singlepageapp/master/ui/product-template.html";
+	var templateKey = "_prd";
+
+	$.getJSON( modelUrl, function( data ) {
+  		var modelJson = JSON.stringify(data);
+  		console.log("Model: " + modelJson);
+
+		$.get( templateUrl, function( template ) {
+	  		console.log("load template html: " + template);
+
+			// Compile 
+			var compiled = dust.compile(template, templateKey);
+			console.log("compiled: " + compiled);
+
+			// Load
+			dust.loadSource(compiled);
+
+			// Rendering
+			dust.render(templateKey, modelJson , function(err, out){
+				console.log("final(success): " + out);
+				console.log("final(err): " + err);
+				$("#table_content").html(out);
+			});
+		});
+	});
+
+});
+	
+</script>
+
+<div>
+<b> Grid </b>
+<table border="1">
+	<thead>
+	<tr>
+	<th>번호</th>
+	<th>상품ID</th>
+	<th>상품이름</th>
+	<th>상품가격</th>
+	</tr>
+	</thead>
+	<tbody id="table_content">
+	</tbody>
+</table>
+</div>
+
+</body>
+</html>
