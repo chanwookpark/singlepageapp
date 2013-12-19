@@ -16,8 +16,8 @@ $(document).ready(function(){
 	var templateUrl = "https://raw.github.com/chanwookpark/singlepageapp/master/ui/product-template.html";
 	var templateKey = "_prd";
 
-	$.getJSON( modelUrl, function( data ) {
-  		var modelJson = JSON.stringify(data);
+	$.getJSON( modelUrl, function( modelJson ) {
+  		//var modelJson = JSON.parse(data);
   		console.log("Model: " + modelJson);
 
 		$.get( templateUrl, function( template ) {
@@ -43,20 +43,24 @@ $(document).ready(function(){
 	
 </script>
 
-<div>
 <b> Grid </b>
+<div>
+<form>
 <table border="1">
 	<thead>
-	<tr>
-	<th>번호</th>
-	<th>상품ID</th>
-	<th>상품이름</th>
-	<th>상품가격</th>
-	</tr>
+		<tr>
+			<th>선</th>
+			<th>번호</th>
+			<th>상품ID</th>
+			<th>상품이름</th>
+			<th>상품가격</th>
+		</tr>
 	</thead>
 	<tbody id="table_content">
 	</tbody>
 </table>
+<input type="submit" value="저장" />
+</form>
 </div>
 
 </body>

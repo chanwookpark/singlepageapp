@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"table",
+				"table_content"
+			],
+			[
+				"th",
+				"thead	Tag"
+			],
+			[
 				"model",
 				"modelJson"
 			],
@@ -19,7 +27,7 @@
 			"file": "ui/app.html",
 			"settings":
 			{
-				"buffer_size": 1318,
+				"buffer_size": 1352,
 				"line_ending": "Unix"
 			}
 		},
@@ -27,7 +35,7 @@
 			"file": "ui/product-template.html",
 			"settings":
 			{
-				"buffer_size": 123,
+				"buffer_size": 141,
 				"line_ending": "Unix"
 			}
 		},
@@ -112,24 +120,25 @@
 					"file": "ui/app.html",
 					"settings":
 					{
-						"buffer_size": 1318,
+						"buffer_size": 1352,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1066,
-								1066
+								225,
+								225
 							]
 						],
 						"settings":
 						{
 							"auto_name": "",
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 92.0,
+						"translation.y": 652.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -139,15 +148,15 @@
 					"file": "ui/product-template.html",
 					"settings":
 					{
-						"buffer_size": 123,
+						"buffer_size": 141,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								122,
-								122
+								0,
+								141
 							]
 						],
 						"settings":
@@ -172,8 +181,8 @@
 						"selection":
 						[
 							[
-								4,
-								15
+								0,
+								244
 							]
 						],
 						"settings":
