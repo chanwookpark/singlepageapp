@@ -9,18 +9,9 @@
 <body>
 <script type='text/javascript'>
 
-$(document).ready(function(){
+function view(model, templateUrl, templateKey) {
 
-	// Test Data
-	var modelUrl = "https://raw.github.com/chanwookpark/singlepageapp/master/ui/product-model.json";
-	var templateUrl = "https://raw.github.com/chanwookpark/singlepageapp/master/ui/product-template.html";
-	var templateKey = "_prd";
-
-	$.getJSON( modelUrl, function( modelJson ) {
-  		//var modelJson = JSON.parse(data);
-  		console.log("Model: " + modelJson);
-
-		$.get( templateUrl, function( template ) {
+	$.get( templateUrl, function( template ) {
 	  		console.log("load template html: " + template);
 
 			// Compile 
@@ -31,15 +22,38 @@ $(document).ready(function(){
 			dust.loadSource(compiled);
 
 			// Rendering
-			dust.render(templateKey, modelJson , function(err, out){
+			dust.render(templateKey, model , function(err, out){
 				console.log("final(success): " + out);
 				console.log("final(err): " + err);
 				$("#table_content").html(out);
 			});
 		});
-	});
+}
 
+var templateUrl = "https://raw.github.com/chanwookpark/singlepageapp/master/ui/product-template.html";
+var templateKey = "_prd";
+
+// 페이지(View) 별로 정의하는 모델 정보 
+var ProductModel = function() {
+	this.modelUrl = 
+		"https://raw.github.com/chanwookpark/singlepageapp/master/ui/product-model.json";
+};
+
+// Event Logic
+ProductModel.prototype.init = function() {
+	$.getJSON(this.modelUrl, function( model ) {
+  		console.log("Model: " + model);
+
+  		view(model, templateUrl, templateKey);
+	});
+}
+
+var gridTable = new ProductModel();
+
+$(document).ready(function(){
+	gridTable.init();
 });
+
 	
 </script>
 
