@@ -15,7 +15,7 @@ var ViewEventLogic = function() {
 		productModel.get();
 		productView.render(model, function(err, out){
 			$("#table_content").html(out);
-		});
+		});		
 	}
 }
 // -- Event Logic -- //
