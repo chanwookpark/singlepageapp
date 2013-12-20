@@ -3,10 +3,6 @@
 
 <head>
 	<meta charset="utf-8" />
-	<script src="http://code.jquery.com/jquery-2.0.3.js"></script>
-	<script src="https://raw.github.com/linkedin/dustjs/master/dist/dust-full.js"></script>
-	<script src="app.js"></script>
-	<script src="view.js"></script>
 </head>	
 <body>
 <b> Grid </b>
@@ -29,17 +25,24 @@
 </form>
 </div>
 
+
+<script src="http://code.jquery.com/jquery-2.0.3.js"></script>
+<script src="https://raw.github.com/linkedin/dustjs/master/dist/dust-full.js"></script>
+<script src="model.js"></script>
+<script src="event.js"></script>
+<script src="view.js"></script>
 <script type='text/javascript'>
 	// Model 생성 
 	var productModel = new ProductModel();
 
-	// View 생성 
-	var productView = new View("_prd",
-			"https://raw.github.com/chanwookpark/singlepageapp/master/ui/product-template.html");
-
 	// Event Logic 생성 
 	var productEventLogic = new ViewEventLogic();
 
+	// View 생성 
+	var productView = new View("_prd",
+			"https://raw.github.com/chanwookpark/singlepageapp/master/ui/template.html");
+
+	// Event 호출  
 	productEventLogic.init(productModel);
 </script>
 </body>
