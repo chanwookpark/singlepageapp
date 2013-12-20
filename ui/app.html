@@ -6,15 +6,19 @@
 	<script src="http://code.jquery.com/jquery-2.0.3.js"></script>
 	<script src="https://raw.github.com/linkedin/dustjs/master/dist/dust-full.js"></script>
 	<script src="app.js"></script>
+	<script src="view.js"></script>
 </head>	
 <body>
 <script type='text/javascript'>
 
-var templateUrl = "https://raw.github.com/chanwookpark/singlepageapp/master/ui/product-template.html";
-var templateKey = "_prd";
-
+// Model 생성 
 var productModel = new ProductModel();
-var productView = new View();
+
+// View 생성 
+var productView = new View("_prd",
+		"https://raw.github.com/chanwookpark/singlepageapp/master/ui/product-template.html");
+
+// Event Logic 생성 
 var productEventLogic = new ViewEventLogic();
 
 $(document).ready(function(){
