@@ -1,9 +1,9 @@
-//-- View --//
+// -- View -- //
 var View = function(templateKey, templateUrl) {
 	var templateKey = templateKey;
 	var templateUrl = templateUrl;
 
-	//Model을 Observe한다는 것을 목표로 하지만, 아직은 구현 못함. how? 
+	//TODO Model을 Observe한다는 것을 목표로 하지만, 아직은 구현 못함
 	this.render = function(model, renderingCallback){
 		$.get(templateUrl, function( template ) {
 	  		console.log("load template html: ", template);
@@ -26,4 +26,4 @@ var View = function(templateKey, templateUrl) {
 		});
 	};
 };
-//-- View --//
+// -- View -- //
