@@ -36,14 +36,14 @@
 	var productModel = new ProductModel();
 
 	// Event Logic 생성 
-	var productEventLogic = new ViewEventLogic();
+	var productEvent = new ViewEvent();
 
 	// View 생성 
 	var productView = new View("_prd",
 			"https://raw.github.com/chanwookpark/singlepageapp/master/ui/template.html");
 
-	// Event 호출  
-	productEventLogic.init();
+	// Event 매핑 (암묵적으로 onLoad() 이벤트가 걸린 것)  => DOM - Event 바인딩 (나중에 코드 정리.. )
+	window.onload = productEvent.init;
 </script>
 </body>
 </html>

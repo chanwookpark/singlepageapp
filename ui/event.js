@@ -1,9 +1,10 @@
-// -- Event Logic -- //
-var ViewEventLogic = function() {
+// -- Event -- //
+var ViewEvent = function() {
 	this.init = function() {
-		productView.render(productModel.load(), function(err, out){
+		var model = productModel.load();
+		productView.render(model, function(err, out){
 			$("#table_content").html(out);
 		});		
 	}
 }
-// -- Event Logic -- //
+// -- Event -- //
