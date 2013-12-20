@@ -9,49 +9,63 @@
 <body>
 <script type='text/javascript'>
 
-function view(model, templateUrl, templateKey) {
-
-	$.get( templateUrl, function( template ) {
-	  		console.log("load template html: " + template);
+//-- View --//
+var View = function() {
+	//Model을 Observe한다는 것을 목표로 하지만, 아직은 구현 못함. how? 
+	this.render = function(model, templateUrl, templateKey){
+		$.get( templateUrl, function( template ) {
+	  		console.log("load template html: ", template);
 
 			// Compile 
 			var compiled = dust.compile(template, templateKey);
-			console.log("compiled: " + compiled);
+			console.log("compiled: ", compiled);
 
 			// Load
 			dust.loadSource(compiled);
 
 			// Rendering
-			dust.render(templateKey, model , function(err, out){
-				console.log("final(success): " + out);
-				console.log("final(err): " + err);
+			console.log("responseText: " , model.responseText);
+			dust.render(templateKey, JSON.parse(model.responseText) , function(err, out){
+				console.log("final(success): ", out);
+				console.log("final(err): ", err);
 				$("#table_content").html(out);
 			});
 		});
+	};
+};
+//-- View --//
+
+// -- Model -- //
+var ProductModel = function() {
+	this.get = function(){
+		var modelUrl = "https://raw.github.com/chanwookpark/singlepageapp/master/ui/product-model.json";
+		var modelJson = $.getJSON(modelUrl);
+		console.log("Model: ", modelJson);
+		return modelJson;
+	};
+};
+// -- Model -- //
+
+// -- Event Logic -- //
+var ViewEventLogic = function() {
+	this.init = function() {
+		//json 받아.. 
+		var model = productModel.get();
+		
+		productView.render(model, templateUrl, templateKey);
+	}
 }
+// -- Event Logic -- //
 
 var templateUrl = "https://raw.github.com/chanwookpark/singlepageapp/master/ui/product-template.html";
 var templateKey = "_prd";
 
-// 페이지(View) 별로 정의하는 모델 정보 
-var ProductModel = function() {
-	this.modelUrl = 
-		"https://raw.github.com/chanwookpark/singlepageapp/master/ui/product-model.json";
-};
-
-// Event Logic
-ProductModel.prototype.init = function() {
-	$.getJSON(this.modelUrl, function( model ) {
-  		console.log("Model: " + model);
-
-  		view(model, templateUrl, templateKey);
-	});
-}
-
-var gridTable = new ProductModel();
+var productModel = new ProductModel();
+var productView = new View();
+var productEventLogic = new ViewEventLogic();
 
 $(document).ready(function(){
-	gridTable.init();
+	productEventLogic.init();
 });
 
 	
