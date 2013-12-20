@@ -16,8 +16,8 @@ var View = function(templateKey, templateUrl) {
 			dust.loadSource(compiled);
 
 			// Rendering
-			console.log("responseText: " , model.responseText);
-			dust.render(templateKey, JSON.parse(model.responseText) , function(err, out){
+			console.log("responseText: " , model.json.responseText);
+			dust.render(templateKey, JSON.parse(model.json.responseText) , function(err, out){
 				console.log("final(success): ", out);
 				console.log("final(err): ", err);
 					

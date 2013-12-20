@@ -10,7 +10,6 @@
 </head>	
 <body>
 <script type='text/javascript'>
-
 // Model 생성 
 var productModel = new ProductModel();
 
@@ -22,7 +21,7 @@ var productView = new View("_prd",
 var productEventLogic = new ViewEventLogic();
 
 $(document).ready(function(){
-	productEventLogic.init();
+	productEventLogic.init(productModel);
 });
 
 	
