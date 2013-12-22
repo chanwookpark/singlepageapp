@@ -4,20 +4,52 @@
 		"selected_items":
 		[
 			[
-				"table",
-				"table_content"
+				"product",
+				"productModel"
 			],
 			[
-				"th",
-				"thead	Tag"
+				"temp",
+				"templateUrl"
 			],
 			[
-				"model",
-				"modelJson"
+				"fu",
+				"function"
 			],
 			[
 				"tem",
 				"templateUrl"
+			],
+			[
+				"template",
+				"templateKey"
+			],
+			[
+				"View",
+				"ViewEventLogic"
+			],
+			[
+				"proto",
+				"prototype"
+			],
+			[
+				"Gri",
+				"GridTable"
+			],
+			[
+				"model",
+				"modelUrl"
+			],
+			[
+				"json",
+				"jsonText"
+			],
+			[
+				"th",
+				"th	Tag"
+			],
+			[
+				"table",
+				"table_content"
 			]
 		]
 	},
@@ -27,23 +59,55 @@
 			"file": "ui/app.html",
 			"settings":
 			{
-				"buffer_size": 1352,
+				"buffer_size": 1087,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "ui/product-template.html",
+			"file": "ui/model.js",
 			"settings":
 			{
-				"buffer_size": 141,
+				"buffer_size": 281,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "ui/product-model.json",
+			"file": "ui/event.js",
+			"settings":
+			{
+				"buffer_size": 220,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "ui/view.js",
+			"settings":
+			{
+				"buffer_size": 796,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "ui/template.html",
+			"settings":
+			{
+				"buffer_size": 146,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "ui/server.json",
 			"settings":
 			{
 				"buffer_size": 244,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 209,
 				"line_ending": "Unix"
 			}
 		}
@@ -51,11 +115,11 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 0.0,
+		"height": 392.0,
 		"selected_items":
 		[
 		],
-		"width": 0.0
+		"width": 575.0
 	},
 	"console":
 	{
@@ -72,6 +136,7 @@
 	},
 	"file_history":
 	[
+		"/Users/chanwook/src/singlepageapp/README.md",
 		"/Users/chanwook/src/singlepageapp/main.html",
 		"/Users/chanwook/Downloads/postcode-src",
 		"/Users/chanwook/src/singlepageapp/ui/product.model",
@@ -94,6 +159,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"modelJson",
+			"load",
+			"modelJson",
 			"productList"
 		],
 		"highlight": true,
@@ -120,15 +188,15 @@
 					"file": "ui/app.html",
 					"settings":
 					{
-						"buffer_size": 1352,
+						"buffer_size": 1087,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								225,
-								225
+								1057,
+								1057
 							]
 						],
 						"settings":
@@ -138,25 +206,109 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 652.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "ui/product-template.html",
+					"file": "ui/model.js",
 					"settings":
 					{
-						"buffer_size": 141,
+						"buffer_size": 281,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
+								248,
+								248
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "ui/event.js",
+					"settings":
+					{
+						"buffer_size": 220,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								136,
+								136
+							],
+							[
+								141,
 								141
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "ui/view.js",
+					"settings":
+					{
+						"buffer_size": 796,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								177,
+								177
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "ui/template.html",
+					"settings":
+					{
+						"buffer_size": 146,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								29,
+								29
 							]
 						],
 						"settings":
@@ -170,8 +322,8 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "ui/product-model.json",
+					"buffer": 5,
+					"file": "ui/server.json",
 					"settings":
 					{
 						"buffer_size": 244,
@@ -181,13 +333,39 @@
 						"selection":
 						[
 							[
-								0,
+								244,
 								244
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "README.md",
+					"settings":
+					{
+						"buffer_size": 209,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								120,
+								120
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

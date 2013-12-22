@@ -1,5 +1,6 @@
 // -- Model -- //
 var ProductModel = function() {
+	"use strict";
 	this.json;
 
 	this.load = function(){

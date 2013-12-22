@@ -1,5 +1,7 @@
 // -- View -- //
 var View = function(templateKey, templateUrl) {
+	"use strict";
+	
 	var templateKey = templateKey;
 	var templateUrl = templateUrl;
 
