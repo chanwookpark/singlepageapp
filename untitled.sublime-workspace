@@ -67,7 +67,7 @@
 			"file": "ui/model.js",
 			"settings":
 			{
-				"buffer_size": 281,
+				"buffer_size": 296,
 				"line_ending": "Unix"
 			}
 		},
@@ -75,7 +75,7 @@
 			"file": "ui/event.js",
 			"settings":
 			{
-				"buffer_size": 220,
+				"buffer_size": 237,
 				"line_ending": "Unix"
 			}
 		},
@@ -83,7 +83,7 @@
 			"file": "ui/view.js",
 			"settings":
 			{
-				"buffer_size": 796,
+				"buffer_size": 813,
 				"line_ending": "Unix"
 			}
 		},
@@ -100,6 +100,14 @@
 			"settings":
 			{
 				"buffer_size": 244,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "server/app.js",
+			"settings":
+			{
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -123,7 +131,10 @@
 	},
 	"console":
 	{
-		"height": 0.0
+		"height": 0.0,
+		"history":
+		[
+		]
 	},
 	"distraction_free":
 	{
@@ -145,7 +156,7 @@
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 23.0
 	},
 	"find_in_files":
 	{
@@ -180,12 +191,13 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 6,
 			"sheets":
 			[
 				{
 					"buffer": 0,
 					"file": "ui/app.html",
+					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 1087,
@@ -195,8 +207,8 @@
 						"selection":
 						[
 							[
-								1057,
-								1057
+								369,
+								369
 							]
 						],
 						"settings":
@@ -209,22 +221,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
 					"file": "ui/model.js",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 281,
+						"buffer_size": 296,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								248,
-								248
+								0,
+								0
 							]
 						],
 						"settings":
@@ -236,26 +250,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
 					"file": "ui/event.js",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 220,
+						"buffer_size": 237,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								136,
-								136
-							],
-							[
-								141,
-								141
+								0,
+								0
 							]
 						],
 						"settings":
@@ -266,22 +278,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
 					"buffer": 3,
 					"file": "ui/view.js",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 796,
+						"buffer_size": 813,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								177,
-								177
+								0,
+								0
 							]
 						],
 						"settings":
@@ -293,11 +307,13 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
 					"buffer": 4,
 					"file": "ui/template.html",
+					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 146,
@@ -319,11 +335,13 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
 					"buffer": 5,
 					"file": "ui/server.json",
+					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 244,
@@ -345,11 +363,42 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 6,
+					"file": "server/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
 					"file": "README.md",
+					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 209,
@@ -371,6 +420,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 7,
 					"type": "text"
 				}
 			]
@@ -378,7 +428,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 23.0
 	},
 	"input":
 	{
@@ -407,9 +457,14 @@
 		]
 	},
 	"menu_visible": true,
-	"replace":
+	"output.find_results":
 	{
 		"height": 0.0
+	},
+	"project": "untitled.sublime-project",
+	"replace":
+	{
+		"height": 42.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -428,10 +483,24 @@
 		],
 		"width": 0.0
 	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
 	"side_bar_width": 180.0,
-	"status_bar_visible": true
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
 }
