@@ -15,6 +15,16 @@ function require(moduleName){
 				console.log("Change product Mmdoel(by load()): ", this.json);
 				return this;
 			}
+		}, 
+		ProductEvent: function() {
+			"use strict";
+
+			this.init = function(productModel, productView) {
+				var model = productModel.load();
+				productView.render(model, function(err, out){
+					$("#table_content").html(out);
+				});		
+			}
 		}
 	};
 
