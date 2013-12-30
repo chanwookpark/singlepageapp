@@ -26,20 +26,7 @@
 
 <script src="http://code.jquery.com/jquery-2.0.3.js"></script>
 <script src="https://raw.github.com/linkedin/dustjs/master/dist/dust-full.js"></script>
-<script src="module.js"></script>
 <script src="view.js"></script>
-<script type="text/javascript">
-
-(function() {
-	var productModel = require('ProductModel');
-	var productEvent = require('ProductEvent');
-
-	var productView = new View("_prd",
-			"https://raw.github.com/chanwookpark/singlepageapp/master/ui/template.html");
-
-	// Event 매핑 (암묵적으로 onLoad() 이벤트가 걸린 것)  => DOM - Event 바인딩 (나중에 코드 정리.. )
-	window.onload = productEvent.init(productModel, productView);
-})();
-</script>
+<script type="text/javascript" data-main="app" src="lib/require.js"></script>
 </body>
 </html>

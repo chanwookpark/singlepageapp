@@ -1,12 +1,12 @@
-// -- View -- //
-var View = function(templateKey, templateUrl) {
+define(function(){
 	"use strict";
 	
-	var templateKey = templateKey;
-	var templateUrl = templateUrl;
+	var exports = {
+		version: "0.1"
+	};
 
 	//TODO Model을 Observe한다는 것을 목표로 하지만, 아직은 구현 못함
-	this.render = function(model, renderingCallback){
+	exports.render = function(templateKey, templateUrl, model, renderingCallback){
 		$.get(templateUrl, function( template ) {
 	  		console.log("load template html: ", template);
 
@@ -18,8 +18,8 @@ var View = function(templateKey, templateUrl) {
 			dust.loadSource(compiled);
 
 			// Rendering
-			console.log("responseText: " , model.json.responseText);
-			dust.render(templateKey, JSON.parse(model.json.responseText) , function(err, out){
+			console.log("responseText: " , model.responseText);
+			dust.render(templateKey, JSON.parse(model.responseText) , function(err, out){
 				console.log("final(success): ", out);
 				console.log("final(err): ", err);
 					
@@ -27,5 +27,6 @@ var View = function(templateKey, templateUrl) {
 			});
 		});
 	};
-};
-// -- View -- //
+
+	return exports;
+});
