@@ -76,6 +76,14 @@
 			}
 		},
 		{
+			"file": "doc/text2.md",
+			"settings":
+			{
+				"buffer_size": 7154,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "ui/view.js",
 			"settings":
 			{
@@ -119,6 +127,8 @@
 	},
 	"file_history":
 	[
+		"/Users/chanwook/src/singlepageapp/doc/text1.md",
+		"/Users/chanwook/src/singlepageapp/doc/text2.md",
 		"/Users/chanwook/src/singlepageapp/README.md",
 		"/Users/chanwook/src/singlepageapp/.gitignore",
 		"/Users/chanwook/src/singlepageapp/ui/view.js",
@@ -178,7 +188,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -195,7 +205,7 @@
 						[
 							[
 								621,
-								621
+								698
 							]
 						],
 						"settings":
@@ -207,11 +217,41 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"file": "doc/text2.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7154,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								7154
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3054.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
 					"file": "ui/view.js",
 					"semi_transient": false,
 					"settings":
@@ -223,8 +263,8 @@
 						"selection":
 						[
 							[
-								668,
-								668
+								0,
+								767
 							]
 						],
 						"settings":
@@ -236,11 +276,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 3,
 					"file": "README.md",
 					"semi_transient": false,
 					"settings":
@@ -264,14 +304,8 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"file": "doc/diagram_v2.png",
-					"semi_transient": true,
 					"stack_index": 3,
-					"type": "image"
+					"type": "text"
 				}
 			]
 		}
